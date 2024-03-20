@@ -4,11 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Editor de código</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     
     <div class="contenedor">
-        <textarea class="texto_ingresado" id="texto_ingresado" placeholder="Escribe tu código aquí"></textarea>
+        <textarea onkeyup="actualizar()" class="texto_ingresado" id="texto_ingresado" placeholder="Escribe tu código aquí"></textarea>
+        <! -- usamos srcdoc para mostrar en la etiqueta iframe, el código que escribimos anteriormente -->
+        <iframe class="editor" id="editor" srcdoc="Resultados aquí"></iframe>
+
+        <div class="credits">Design and code for practice by <a href="https://github.com/anteseraunpato">Jahir Medina</a></div>
     </div>
+
+    <script src="./main.js"></script>
 </body>
 </html>
