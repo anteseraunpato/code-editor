@@ -5,6 +5,7 @@
     height: 100vh;
     font-size: 16px;
     color: white;
+    font-family: Fira Code, sans-serif;
 }
 
 body {
@@ -12,12 +13,13 @@ body {
 }
 
 .texto_ingresado {
+    border-radius: 3px;
     width: 45%;
     border: 2px solid #5f5091;
-    margin-top: 2px;
+    margin-top: 5px;
     text-decoration: none;
     margin-left: 10px;
-    background-color: #241d3e;
+    background-color: #211835;
     outline: none;
     height: 95%;
 }
@@ -27,24 +29,34 @@ body {
     top: 0;
     left: 5px;
     overflow-y: auto;
+    font-weight: 400;
 }
 
 .editor {
-    background-color: #6654a9;
-    margin-top: 0;
+    border-radius: 2px;
+    background-color: #241d3e;
+    margin-top: 5px;
     margin-left: 18px;
     width: 50%;
     height:95%;
-    border: 2px solid #5f5091;
+    border: 1px solid #5f5091;
 }
 
 .credits {
+    font-weight: bold;
     height: auto;
     padding: 2px;
     text-align: center;
+    color: #5f5091;
 }
 
 .credits a {
     text-decoration: none;
-    color:blue;
+
+    font-style: italic;
+    transition: 1s all;
+}
+
+.credits a:hover {
+    color: blue;
 }
