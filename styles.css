@@ -1,0 +1,50 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    font-size: 16px;
+    color: white;
+}
+
+body {
+    background-color: #211835;
+}
+
+.texto_ingresado {
+    width: 45%;
+    border: 2px solid #5f5091;
+    margin-top: 2px;
+    text-decoration: none;
+    margin-left: 10px;
+    background-color: #241d3e;
+    outline: none;
+    height: 95%;
+}
+
+.texto_ingresado::placeholder {
+    position: relative;
+    top: 0;
+    left: 5px;
+    overflow-y: auto;
+}
+
+.editor {
+    background-color: #6654a9;
+    margin-top: 0;
+    margin-left: 18px;
+    width: 50%;
+    height:95%;
+    border: 2px solid #5f5091;
+}
+
+.credits {
+    height: auto;
+    padding: 2px;
+    text-align: center;
+}
+
+.credits a {
+    text-decoration: none;
+    color:blue;
+}
